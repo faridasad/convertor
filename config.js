@@ -5,7 +5,7 @@ export const SERVER_CONFIG = {
 };
 
 export const CORS_CONFIG = {
-  origin: ["*"],
+  origin: true,
   methods: ["POST"],
   allowedHeaders: ["Content-Type"],
   credentials: true,
