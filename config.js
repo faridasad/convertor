@@ -1,5 +1,5 @@
 export const SERVER_CONFIG = {
-  PORT: process.env.PORT || 3002,
+  PORT: 3008,
   BODY_LIMIT: 5 * 1024 * 1024, // 5MB limit
   LOGGER: true,
 };
@@ -8,6 +8,7 @@ export const CORS_CONFIG = {
   origin: ["*"],
   methods: ["POST"],
   allowedHeaders: ["Content-Type"],
+  credentials: true,
   maxAge: 600,
 };
 
