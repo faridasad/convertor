@@ -1,5 +1,5 @@
 export const SERVER_CONFIG = {
-  PORT: 3030,
+  PORT: process.env.PORT || 3002,
   BODY_LIMIT: 5 * 1024 * 1024, // 5MB limit
   LOGGER: true,
 };
