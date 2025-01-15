@@ -66,6 +66,7 @@ fastify.post("/html2pdf", {
       reply
         .header("Content-Type", "application/pdf")
         .header("Content-Length", pdfBuffer.length)
+        .header("Content-Disposition", "attachment; filename=ActivityReport.pdf")
         .header("X-Content-Type-Options", "nosniff")
         .send(pdfBuffer);
     } catch (error) {
@@ -101,6 +102,7 @@ const start = async () => {
     });
   } catch (err) {
     console.log(err);
+
     await closeAllBrowsers(browserPool);
     process.exit(1);
   }
