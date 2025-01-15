@@ -8,7 +8,6 @@ export const CORS_CONFIG = {
   origin: ["*"],
   methods: ["POST"],
   allowedHeaders: ["Content-Type"],
-  credentials: true,
   maxAge: 600,
 };
 
